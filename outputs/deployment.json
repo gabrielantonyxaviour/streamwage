@@ -1,0 +1,37 @@
+{
+  "chainId": 11142220,
+  "network": "Celo Sepolia",
+  "rpc": "https://forno.celo-sepolia.celo-testnet.org",
+  "explorer": "https://celo-sepolia.blockscout.com",
+  "deployer": "0xd5E79f200cbe03141F81566dc213a46135f83062",
+  "vault": "0x5eAfDC8D612c8c2860cE8002516737e413B07c67",
+  "cusd": "0x5127B7B034Cf9798c58948B64359a2Bf6285518d",
+  "cusdNote": "Mintable cUSD mock (ERC20 'Celo Dollar (Test)') deployed for the testnet end-to-end flow because the deployer held 0 real USDm and there is no Celo Sepolia faucet for it.",
+  "realCusdMainnetCandidate": "0xdE9e4C3ce781b4bA68120d6261cbad65ce0aB00b",
+  "realCusdMainnetCandidateNote": "Mento USDm — the production cUSD token kept as the mainnet/production candidate.",
+  "verified": {
+    "vault": "https://celo-sepolia.blockscout.com/address/0x5eAfDC8D612c8c2860cE8002516737e413B07c67",
+    "cusd": "https://celo-sepolia.blockscout.com/address/0x5127B7B034Cf9798c58948B64359a2Bf6285518d"
+  },
+  "streamId": 0,
+  "ratePerSecond": "100000000000000000",
+  "ratePerSecondHuman": "0.1 cUSD/sec",
+  "fundedAmount": "1000000000000000000000",
+  "fundedAmountHuman": "1000 cUSD",
+  "claimedAmount": "6400000000000000000",
+  "claimedAmountHuman": "6.4 cUSD",
+  "tx": {
+    "approve": "0x91c1ea2c233e1d45d97beb03da1f6e65551ca57cc2362643563c5a092b2e0ac9",
+    "fundPayroll": "0x319031ca9542b9df501a64aac663679248910f2897d8fad356320ceace4b9353",
+    "setWorkerVerification": "0x94a2e1991a3218c9da43c7f153df6cfa550ab2be128243ffc9c099a5120ac34d",
+    "createStream": "0x1ac601f17700a22e3e9b06fba6780e4067f4bd52041c9f984244b17a0d6f1fd6",
+    "withdrawAccrued": "0xcb29b4bf41512ea8f55971e23407d94d35e9d5d64eda9ec08370b925bb35cc47"
+  },
+  "txExplorer": {
+    "approve": "https://celo-sepolia.blockscout.com/tx/0x91c1ea2c233e1d45d97beb03da1f6e65551ca57cc2362643563c5a092b2e0ac9",
+    "fundPayroll": "https://celo-sepolia.blockscout.com/tx/0x319031ca9542b9df501a64aac663679248910f2897d8fad356320ceace4b9353",
+    "setWorkerVerification": "https://celo-sepolia.blockscout.com/tx/0x94a2e1991a3218c9da43c7f153df6cfa550ab2be128243ffc9c099a5120ac34d",
+    "createStream": "https://celo-sepolia.blockscout.com/tx/0x1ac601f17700a22e3e9b06fba6780e4067f4bd52041c9f984244b17a0d6f1fd6",
+    "withdrawAccrued": "https://celo-sepolia.blockscout.com/tx/0xcb29b4bf41512ea8f55971e23407d94d35e9d5d64eda9ec08370b925bb35cc47"
+  }
+}
