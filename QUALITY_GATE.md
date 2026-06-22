@@ -13,7 +13,7 @@ Final status: `demo-ready`
 | Browser proof | pass | `npm run test:e2e` — 3 passed |
 | Visual QA / polish | partial | local screenshots passed; formal `/polish` blocked by stopped Tailscale/M2 |
 | Cloudflare deploy | pass | `https://streamwage.pages.dev`, latest `https://cb751143.streamwage.pages.dev` |
-| GitHub Actions CI | pass | run `27964394349` passed `npm ci`, `forge test`, `npm test`, `npm run build` |
+| GitHub Actions CI | pass | run `27964520406` passed `npm ci`, `forge test`, `npm test`, `npm run build` |
 | Security/audit | warning | `npm audit --audit-level=moderate` fails with 35 transitive vulnerabilities after non-breaking fix |
 
 ## Visual QA
