@@ -20,6 +20,7 @@ Final status: `demo-ready`
 - `npm run build`: pass, wallet chunk-size warnings.
 - `npm run rpc:check`: pass, Celo Sepolia chain ID `11142220`.
 - `npm run test:e2e`: pass, 3 tests passed.
+- GitHub Actions CI: pass, run `27964394349`.
 - `npm audit --audit-level=moderate`: fail, 35 transitive vulnerabilities remain after non-breaking `npm audit fix`; force fix requires breaking wallet/Self upgrades.
 
 ## Browser And Visual Proof
