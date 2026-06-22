@@ -1,0 +1,173 @@
+/* StreamWage additions: fund-payroll form + Self verification panel. */
+
+.fund-form {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 20px 22px;
+  margin-bottom: 20px;
+  backdrop-filter: var(--glass-blur);
+}
+
+.fund-form__head {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  color: var(--accent);
+}
+
+.fund-form__head h4 {
+  font-size: 16px;
+  color: var(--text-primary);
+}
+
+.fund-form__head span {
+  display: block;
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.fund-form__row {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.fund-form__row .trove-form__input-row {
+  flex: 1;
+  min-width: 180px;
+}
+
+.fund-form__hint {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Self verification panel */
+.self-verify {
+  border: 1px dashed var(--border-accent);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  margin: 6px 0 4px;
+  background: var(--accent-glow);
+}
+
+.self-verify--empty {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  border-style: solid;
+}
+
+.self-verify__head {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+
+.self-verify__head strong {
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+.self-verify__head span {
+  display: block;
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.self-verify__body {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.self-verify__qr {
+  width: 180px;
+  height: 180px;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.self-verify__qr img {
+  display: block;
+}
+
+.self-verify__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  min-width: 220px;
+}
+
+.self-verify__note {
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.self-verify__error {
+  font-size: 12px;
+  color: var(--red);
+}
+
+.self-verify--done {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-style: solid;
+  border-color: var(--green-dim);
+  background: var(--green-dim);
+}
+
+.self-verify--done strong {
+  display: block;
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+.self-verify--done span {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.self-verify__check {
+  color: var(--green);
+  display: grid;
+  place-items: center;
+}
+
+.onboarding__hint {
+  display: block;
+  margin-top: 8px;
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* Stack the sidebar above content on small screens (MiniPay/mobile). */
+@media (max-width: 720px) {
+  .self-verify__body {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .self-verify__qr {
+    margin: 0 auto;
+  }
+}

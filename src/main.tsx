@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { RainbowKitProvider, darkTheme } from "@rainbow-me/rainbowkit";
 import "@rainbow-me/rainbowkit/styles.css";
 import App from "./App";
-import { celoSepolia, wagmiConfig } from "./lib/wagmi";
+import { wagmiConfig, celoSepolia } from "./lib/wagmi";
 import "./styles.css";
 
 const queryClient = new QueryClient();
@@ -17,9 +17,9 @@ createRoot(document.getElementById("root")!).render(
         <RainbowKitProvider
           initialChain={celoSepolia}
           theme={darkTheme({
-            accentColor: "#2fd67a",
-            accentColorForeground: "#06130b",
-            borderRadius: "small",
+            accentColor: "#35D07F",
+            accentColorForeground: "#050505",
+            borderRadius: "medium",
           })}
         >
           <App />

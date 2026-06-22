@@ -1,0 +1,12 @@
+node_modules
+dist
+out
+cache
+broadcast
+lib
+coverage
+package-lock.json
+public
+*.png
+*.sol
+.env*

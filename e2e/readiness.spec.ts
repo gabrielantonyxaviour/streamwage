@@ -1,25 +1,23 @@
 import { expect, test } from "@playwright/test";
 
-test("StreamWage renders the Celo payroll workspace", async ({ page }) => {
+test("landing page renders the StreamWage hero", async ({ page }) => {
   await page.goto("/");
-
-  await expect(page.getByRole("heading", { name: "StreamWage" })).toBeVisible();
-  await expect(page.getByText("Mento cUSD")).toBeVisible();
-  await expect(page.getByRole("heading", { name: "Employer console" })).toBeVisible();
-  await expect(page.getByRole("heading", { name: "Worker claim" })).toBeVisible();
+  await expect(page.getByRole("button", { name: "Launch app" })).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: /Stream salaries in/i }),
+  ).toBeVisible();
 });
 
-test("worker claim panel keeps the MiniPay flow front and center", async ({ page }) => {
+test("landing page explains the cUSD + MiniPay flow", async ({ page }) => {
   await page.goto("/");
-
-  await expect(page.getByText("Claimable now")).toBeVisible();
-  await expect(page.getByRole("button", { name: "Claim accrued cUSD" })).toBeVisible();
-  await expect(page.getByText("MiniPay ready")).toBeVisible();
+  await expect(page.getByText("Per-second cUSD streams")).toBeVisible();
+  await expect(page.getByText("Claim in MiniPay")).toBeVisible();
+  await expect(page.getByText("Self-verified workers")).toBeVisible();
 });
 
-test("desktop wallet modal remains available outside MiniPay", async ({ page }) => {
+test("how-it-works shows the three payroll steps", async ({ page }) => {
   await page.goto("/");
-
-  await page.getByRole("button", { name: /connect wallet/i }).click();
-  await expect(page.getByText("Connect a Wallet")).toBeVisible();
+  await expect(page.getByText("Fund payroll")).toBeVisible();
+  await expect(page.getByText("Verify & stream")).toBeVisible();
+  await expect(page.getByText("Claim in MiniPay").first()).toBeVisible();
 });
