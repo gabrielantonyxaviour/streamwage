@@ -9,8 +9,8 @@ Final status: `demo-ready`
 
 ## Verified Contract
 
-- StreamWageVault: `0xe539898822e5842477D288D2e66758fe5CE69e47`
-- Blockscout: `https://celo-sepolia.blockscout.com/address/0xe539898822e5842477d288d2e66758fe5ce69e47`
+- StreamWageVault: `0x5eAfDC8D612c8c2860cE8002516737e413B07c67`
+- Blockscout: `https://celo-sepolia.blockscout.com/address/0x5eAfDC8D612c8c2860cE8002516737e413B07c67`
 - cUSD: `0xdE9e4C3ce781b4bA68120d6261cbad65ce0aB00b`
 
 ## Checks

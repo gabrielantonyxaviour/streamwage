@@ -6,7 +6,7 @@
 - Foundry tests cover cUSD funding, Self-gated stream creation, accrual, pause/resume, claim transfers, and worker-only claim.
 - Frontend builds against Celo Sepolia, Mento cUSD, and a deploy-time vault address variable.
 - Mento cUSD Celo Sepolia address was verified from Mento's official deployment docs on 2026-06-22.
-- `StreamWageVault` is deployed and verified on Celo Sepolia at `0xe539898822e5842477D288D2e66758fe5CE69e47`.
+- `StreamWageVault` is deployed and verified on Celo Sepolia at `0x5eAfDC8D612c8c2860cE8002516737e413B07c67`.
 - Cloudflare Pages app is live at `https://streamwage.pages.dev`.
 
 ## Fixture / local only

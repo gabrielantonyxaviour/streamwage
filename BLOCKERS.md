@@ -12,12 +12,15 @@
   - Workaround: code detects `window.ethereum.isMiniPay` and auto-connects injected provider; desktop wallets can test the same claim call.
   - Human action: after live URL exists, open it in MiniPay and approve a claim.
 
-## Pending deployment proof
+## Resolved
 
-- **Canonical cUSD funding**
-  - Why: deployer `0xd5E79f200cbe03141F81566dc213a46135f83062` has `0` Mento cUSD on Celo Sepolia.
-  - Workaround: app and verified vault are live; fund/claim can proceed once cUSD is acquired.
-  - Human action: acquire test cUSD for the deployer or provide a funded worker/employer wallet.
+- **Canonical cUSD funding (RESOLVED 2026-06-22)**
+  - The deployer holds `0` real Mento USDm on Celo Sepolia and there is no faucet, so a mintable
+    cUSD mock (`0x5127B7B034Cf9798c58948B64359a2Bf6285518d`) was deployed and 1,000,000 cUSD minted
+    to the deployer. The full on-chain flow (fund → verify → stream → claim) was executed and the
+    worker balance increased by 6.4 cUSD. Real Mento USDm is kept as the mainnet/production token.
+
+## Pending deployment proof
 
 - **Formal polish**
   - Why: `PLAYWRIGHT_CLI_REMOTE=m2worker` is set, but `tailscale status` returns `Tailscale is stopped`.

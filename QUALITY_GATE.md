@@ -2,19 +2,19 @@
 
 Final status: `demo-ready`
 
-| Gate | Result | Evidence |
-|---|---|---|
-| Contract tests | pass | `forge test` — 5 passed, 0 failed |
-| Frontend unit tests | pass | `npm test` — 1 file, 2 tests passed |
-| Frontend build | pass | `npm run build` completed; wallet chunk-size warnings |
-| RPC smoke | pass | `npm run rpc:check` returned chainId `11142220` |
-| Contract deploy | pass | `0xe539898822e5842477D288D2e66758fe5CE69e47` |
-| Blockscout verification | pass | `https://celo-sepolia.blockscout.com/address/0xe539898822e5842477d288d2e66758fe5ce69e47` |
-| Browser proof | pass | `npm run test:e2e` — 3 passed |
-| Visual QA / polish | partial | local screenshots passed; formal `/polish` blocked by stopped Tailscale/M2 |
-| Cloudflare deploy | pass | `https://streamwage.pages.dev`, latest `https://cb751143.streamwage.pages.dev` |
-| GitHub Actions CI | pass | run `27964520406` passed `npm ci`, `forge test`, `npm test`, `npm run build` |
-| Security/audit | warning | `npm audit --audit-level=moderate` fails with 35 transitive vulnerabilities after non-breaking fix |
+| Gate                    | Result  | Evidence                                                                                           |
+| ----------------------- | ------- | -------------------------------------------------------------------------------------------------- |
+| Contract tests          | pass    | `forge test` — 5 passed, 0 failed                                                                  |
+| Frontend unit tests     | pass    | `npm test` — 1 file, 2 tests passed                                                                |
+| Frontend build          | pass    | `npm run build` completed; wallet chunk-size warnings                                              |
+| RPC smoke               | pass    | `npm run rpc:check` returned chainId `11142220`                                                    |
+| Contract deploy         | pass    | `0x5eAfDC8D612c8c2860cE8002516737e413B07c67`                                                       |
+| Blockscout verification | pass    | `https://celo-sepolia.blockscout.com/address/0x5eAfDC8D612c8c2860cE8002516737e413B07c67`           |
+| Browser proof           | pass    | `npm run test:e2e` — 3 passed                                                                      |
+| Visual QA / polish      | partial | local screenshots passed; formal `/polish` blocked by stopped Tailscale/M2                         |
+| Cloudflare deploy       | pass    | `https://streamwage.pages.dev`, latest `https://cb751143.streamwage.pages.dev`                     |
+| GitHub Actions CI       | pass    | run `27964520406` passed `npm ci`, `forge test`, `npm test`, `npm run build`                       |
+| Security/audit          | warning | `npm audit --audit-level=moderate` fails with 35 transitive vulnerabilities after non-breaking fix |
 
 ## Visual QA
 
